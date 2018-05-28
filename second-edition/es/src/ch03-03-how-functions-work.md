@@ -132,7 +132,7 @@ The value of x is: 5
 The value of y is: 6
 ```
 
-Las dos cadenas se imprimen con estos valores pasados a la función con `5` cuando
+Los dos textos se imprimen con estos valores pasados a la función con `5` cuando
 se pasa el valor de `x` y `6` como el valor de `y`.
 
 ### Los cuerpos de función contienen declaraciones y expresiones
