@@ -1,11 +1,11 @@
 ## Variables y mutabilidad
 
 Como se mencionó en el Capítulo 2, las variables predeterminadas son
-inmutables. Este es uno de los muchos consejos que Rust le brinda para
+inmutables. Este es uno de los muchos empujones que Rust le brinda para
 escribir su código de una manera que aproveche la seguridad y la
-simultaneidad fácil que ofrece Rust. Sin embargo, todavía tienes la opción de
+fácil concurrencia que ofrece Rust. Sin embargo, todavía tienes la opción de
 hacer que tus variables sean mutables. Exploremos cómo y por qué Rust lo
-anima a favorecer la inmutabilidad y por qué a veces es posible que desee
+anima a elegir la inmutabilidad y por qué a veces es posible que desee
 optar por no participar.
 
 Cuando una variable es inmutable, una vez que un valor está vinculado a un
@@ -44,7 +44,7 @@ error[E0384]: cannot assign twice to immutable variable `x`
 Este ejemplo muestra cómo el compilador lo ayuda a encontrar errores en sus
 programas. Aunque los errores del compilador pueden ser frustrantes, solo se
 refieren a que su programa todavía no está haciendo lo que quiere hacer de
-manera segura; ellos *no* significan, ¡que no eres un buen programador! los
+manera segura; ellos *no* significan, ¡que no eres un buen programador! Los
 *Rustacean* experimentados aún tienen errores de compilación.
 
 El mensaje de error indica que la causa del error es que `no puede
@@ -69,7 +69,7 @@ Pero la mutabilidad puede ser muy útil. Las variables son inmutables solo por
 defecto; como lo hiciste en el Capítulo 2, puedes hacer que sean mutables
 añadiendo `mut` delante del nombre de la variable. Además de permitir que
 este valor cambie, `mut` transmite intención para los futuros lectores del
-código al indicar que otras partes del código cambiará este valor de variable.
+código al indicar que en otras partes del código cambiará esta variable de valor.
 
 Por ejemplo, cambiemos *src/main.rs* a lo siguiente:
 
@@ -105,7 +105,7 @@ estructuras de datos grandes, mutar una instancia en su lugar puede ser más
 rápido que copiar y devolver instancias recientemente asignadas. Con
 estructuras de datos más pequeñas, crear nuevas instancias y escribir en un
 estilo de programación más funcional puede ser más fácil de pensar, por lo
-que un rendimiento inferior podría ser una pena que valga la pena para
+que un rendimiento inferior podría ser una penalización que valga la pena para
 obtener esa claridad.
 
 ### Diferencias entre variables y constantes
@@ -121,7 +121,7 @@ solo inmutables por defecto, siempre son inmutables.
 
 Usted declara constantes usando la palabra clave `const` en lugar de la
 palabra clave `let`, y el tipo del valor *debe* ser anotado. Estamos a punto
-de cubrir tipos y escribir anotaciones en la siguiente sección, “Tipos de
+de cubrir *types* y *type annotations* en la siguiente sección, “Tipos de
 datos”, así que no se preocupe por los detalles en este momento. Solo debes
 saber que siempre debes anotar el tipo.
 
@@ -145,8 +145,8 @@ const MAX_POINTS: u32 = 100_000;
 Las constantes son válidas durante todo el tiempo que se ejecuta un programa,
 dentro del alcance en el que fueron declaradas, lo que las convierte en una
 opción útil para los valores en su dominio de aplicación que varias partes
-del programa podrían necesitar conocer, como el número máximo de puntos
-jugador de un juego puede ganar o la velocidad de la luz.
+del programa podrían necesitar conocer, como la cantidad máxima de puntos que
+cualquier jugador de un juego puede ganar o la velocidad de la luz.
 
 Nombrar los valores codificados usados a lo largo de su programa como
 constantes es útil para transmitir el significado de ese valor a los futuros
@@ -155,7 +155,8 @@ necesitaría cambiar si el valor codificado debe actualizarse en el futuro.
 
 ### *Sombreado* (*Shadowing*)
 
-Como viste en el tutorial del juego de adivinanzas en la sección “Comparando la conjetura con el número Secreto” en el Capítulo 2, puedes declarar una
+Como viste en el tutorial del juego de adivinanzas en la sección
+“Comparando la conjetura con el número Secreto” en el Capítulo 2, puedes declarar una
 nueva variable con el mismo nombre que una variable anterior, y la nueva
 variable sombrea la variable anterior. Los Rustaceans dicen que la primera
 variable es *sombreada* por la segunda, lo que significa que el valor de la
@@ -237,4 +238,4 @@ error[E0308]: mismatched types
 ```
 
 Ahora que hemos explorado cómo funcionan las variables, veamos más tipos de
-datos que pueden tener.
+datos que pueden haber.
