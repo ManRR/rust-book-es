@@ -1,3 +1,6 @@
+ Este repositorio contiene la traducción al español de la segunda edición del libro "The Rust Programming Language". Tomando como base un fork del original a fecha de 18 de Mayo.
+
+
 # The Rust Programming Language
 
 [![Build Status](https://travis-ci.org/rust-lang/book.svg?branch=master)](https://travis-ci.org/rust-lang/book)
