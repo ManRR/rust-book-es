@@ -1,7 +1,7 @@
 ## Almacenamiento de texto codificado en UTF-8 con *Strings*
 
 Hablamos sobre *strings* de caracteres en el Capítulo 4, pero las veremos con
-más profundidad ahora. Los nuevos Rustaceos comúnmente se atascan en los
+más profundidad ahora. Los nuevos Rustaceans comúnmente se atascan en los
 *strings* por una combinación de tres razones: la propensión de Rust a
 exponer posibles errores, los *strings* son una estructura de datos más
 complicada de lo que muchos programadores les dan crédito, y UTF-8. Estos
