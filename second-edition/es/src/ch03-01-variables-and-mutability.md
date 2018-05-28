@@ -194,7 +194,7 @@ The value of x is: 12
 
 El *sombreado* (*shadowing*) es diferente a marcar una variable como `mut`,
 porque obtendremos un error en tiempo de compilación si accidentalmente
-intentamos reasignarlo a esta variable sin usar la palabra clave `let`. Al
+intentamos reasignar a esta variable sin usar la palabra clave `let`. Al
 usar `let`, podemos realizar algunas transformaciones en un valor, pero la
 variable debe ser inmutable después de que se hayan completado esas
 transformaciones.
