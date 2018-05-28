@@ -188,7 +188,7 @@ $ cargo check
 ¿Por qué no quieres un ejecutable?. A menudo, el `cargo check` es mucho más
 rápido que `cargo build`, porque se salta el paso de producir un ejecutable.
 Si continuamente revisas tu trabajo mientras escribes el código, ¡usar
-`cargo check` ¡acelerará el proceso! Como tal, muchos Rustaceas llevan a cabo
+`cargo check` acelerará el proceso! Como tal, muchos Rustaceas llevan a cabo
 un `cargo check` periódicamente mientras escriben su programa para asegurarse
 de que compila. Luego ejecutan `cargo build` cuando están listos para usar el
 ejecutable.
