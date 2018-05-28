@@ -1,5 +1,6 @@
  Este repositorio contiene la traducción al español de la segunda edición del libro "The Rust Programming Language". Tomando como base un fork del original a fecha de 18 de Mayo.
-
+Puede encontrarla en el directorio "./second-edition/es".
+Saludos ManRR.
 
 # The Rust Programming Language
 
