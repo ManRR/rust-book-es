@@ -1,7 +1,7 @@
 ## Tipos de datos
 
-Cada valor en Rust es de un cierto *tipo de datos*, que le dice a Rust qué
-tipo de datos se especifica para que sepa cómo trabajar con esos datos.
+Cada valor en Rust es de un cierto *tipo de datos*, que le informa a Rust qué
+tipo de datos se están especificando para que sepa cómo trabajar con esos datos.
 Veremos dos subconjuntos de tipos de datos: escalares y compuestos.
 
 Tenga en cuenta que Rust es un lenguaje *estáticamente tipado*, lo que
@@ -10,7 +10,7 @@ compilación. El compilador generalmente puede inferir qué tipo queremos usar
 en función del valor y cómo lo usamos. En los casos en que son posibles
 muchos tipos, como cuando convertimos un `String` a un tipo numérico usando
 `parse` en la sección “Comparando la conjetura con el número secreto” en el
-Capítulo 2, debemos agregar una anotación de tipo, como esta :
+Capítulo 2, debemos agregar una *anotación de tipo* (*type annotation*), como esta :
 
 ```rust
 let guess: u32 = "42".parse().expect("Not a number!");
@@ -47,7 +47,7 @@ en el Capítulo 2, el tipo `u32`. Esta declaración de tipo indica que el valor
 con el que está asociado debe ser un entero sin signo (los tipos enteros con
 signo comienzan con `i`, en lugar de `u`) que ocupan 32 bits de espacio. La
 Tabla 3-1 muestra los tipos enteros integrados en Rust. Cada variante en las
-columnas Firmado y No firmado (por ejemplo, `i16`) se puede usar para declarar
+columnas *Firmado* y *No firmado* (por ejemplo, `i16`) se puede usar para declarar
 el tipo de un valor entero.
 
 <span class="caption">Tabla 3-1: Tipos enteros en Rust</span>
@@ -124,7 +124,7 @@ fn main() {
 ```
 
 Los números de coma flotante se representan según el estándar IEEE-754. El
-tipo `f32` es un flotador de precisión simple, y `f64` tiene doble precisión.
+tipo `f32` es un *float* de precisión simple, y `f64` tiene doble precisión.
 
 #### Operaciones Numéricas
 
@@ -159,8 +159,8 @@ lista de todos los operadores que Rust proporciona.
 
 #### El tipo *booleano* (*Boolean*)
 
-Como en la mayoría de los demás lenguajes de programación, un tipo booleano en
-Rust tiene dos valores posibles: `true` y `false`. El tipo booleano en Rust se
+Como en la mayoría de los demás lenguajes de programación, un tipo *booleano* en
+Rust tiene dos valores posibles: `true` y `false`. El tipo *booleano* en Rust se
 especifica con `bool`. Por ejemplo:
 
 <span class="filename">Filename: src/main.rs</span>
@@ -173,7 +173,7 @@ fn main() {
 }
 ```
 
-La forma principal de usar valores booleanos es mediante condicionales, como
+La forma principal de usar valores *booleanos* es mediante condicionales, como
 una expresión `if`. Cubriremos cómo funcionan las expresiones `if` en Rust en
 la sección “Flujo de control”.
 
